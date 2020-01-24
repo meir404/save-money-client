@@ -7,6 +7,11 @@
   align-items: center;
 }
 
+.center-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -70,4 +75,51 @@
 
 .container-sing-up .title {
   color: white;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vh;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4vh;
+  width: 100vw;
+}
+
+.list-card-container {
+  margin: 15px;
+  padding: 20px 10px 10px 10px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.555);
+  height: 82vh;
+}
+
+.list-header-container {
+  padding: 10px;
+  background: rgba(252, 104, 222, 0.34);
+  border-radius: 5px;
+  color: white
+}
+
+.card {
+  padding: 5px;
+  background: rgba(247, 126, 222, 0.2);
+  border-radius: 2px;
+  margin-top: 10px;
+  color: white;
+}
+
+.cards {
+  height: calc(82vh - 50px);
+  overflow-y: scroll;
 }

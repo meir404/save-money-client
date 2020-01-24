@@ -1,6 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom left, hsl(313, 100%, 50%), hsl(271, 50%,50%));
+  background: linear-gradient(to bottom left, hsla(313, 100%, 50%, 0.6), hsla(271, 50%, 50%, 0.6));
   min-height: 100vh;
 }
