@@ -1,18 +1,24 @@
 
 import React from 'react';
+import { Link, useHistory } from "react-router-dom";
+
 
 function Login() {
+  const history = useHistory();
+  const clickLogin = () => {
+    history.push('/Home');
+  }
   return (
-    <div className="flex login" >
-      <div class="flex flex-column center container">
-        <div class="logo">
-          <img src={require('../../assets/images/logs/logo.svg')} width="220" class="img-logo"></img>
+    <div className="flex center container-login" >
+      <div className="flex flex-column center container">
+        <div className="logo">
+          <img src={require('../../assets/images/logs/logo.png')} alt="logo" width="180" className="img-logo"></img>
         </div>
-        <div class="flex center flex-column inputs">
-          <input class="input" type="text" name="username" />
-          <input class="input" type="password" name="password" />
-          <button class="button-login" >Login</button>
-          <a class="sing-up" >Sing up</a>
+        <div className="flex center flex-column inputs">
+          <input className="input" type="text" name="username" placeholder="Email" />
+          <input className="input" type="password" name="password" placeholder="password" />
+          <button className="button" onClick={() => { clickLogin() }} >Login</button>
+          <Link to="/SingUp" className="sing-up" >Sing up</Link>
         </div>
       </div>
 
