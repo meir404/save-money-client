@@ -16,7 +16,7 @@ function Login() {
         </div>
         <div className="flex center flex-column inputs">
           <input className="input" type="text" name="username" placeholder="Email" />
-          <input className="input" type="password" name="password" placeholder="password" />
+          <input className="input" type="password" name="password" placeholder="Password" />
           <button className="button" onClick={() => { clickLogin() }} >Login</button>
           <Link to="/SingUp" className="sing-up" >Sing up</Link>
         </div>

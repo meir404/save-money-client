@@ -12,7 +12,7 @@ function SingUp() {
                 <div className="title"><h1>Register</h1></div>
                 <input className="input" type="text" name="name" placeholder="Name" />
                 <input className="input" type="text" name="username" placeholder="Email" />
-                <input className="input" type="password" name="password" placeholder="password" />
+                <input className="input" type="password" name="password" placeholder="Password" />
                 <input className="input" type="password" name="confirmPassword" placeholder="Confirm password" />
                 <button className="button" onClick={() => registerClick()}>Register</button>
                 <Link to="/Login" className="return-login" >Login</Link>
