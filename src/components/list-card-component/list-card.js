@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Card from '../card-component/card'
 import ListHeader from '../list-header-component/list-header'
+import { IoIosAdd } from 'react-icons/io'
 
 function ListCard() {
     const orgData = [
@@ -33,8 +34,9 @@ function ListCard() {
         <div className="list-card-container">
             <ListHeader />
             <div className="cards">
-                {data.map((d, i) => <Card key={d.id} dataOrg={d} />)}
+                {data.map((d, i) => <Card key={d.id} data={d} />)}
             </div>
+            <button className="button-add"><IoIosAdd /> </button>
         </div>
     </>);
 }
