@@ -5,7 +5,7 @@ import {
     Route
 } from "react-router-dom";
 import Login from './components/login-component/login';
-import SingUp from './components/singup-compnent/singup';
+import SingUp from './components/sing-up-component/sing-up';
 import Home from './components/home-component/home'
 
 
