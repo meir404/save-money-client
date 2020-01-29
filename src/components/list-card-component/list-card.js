@@ -30,13 +30,34 @@ function ListCard() {
     ];
     const [data, setData] = useState(orgData);
 
+    const [showPopUp, setShowPopUp] = useState(false);
     return (<>
         <div className="list-card-container">
             <ListHeader />
             <div className="cards">
                 {data.map((d, i) => <Card key={d.id} data={d} />)}
             </div>
-            <button className="button-add"><IoIosAdd /> </button>
+            <button className="button-add" onClick={() => setShowPopUp(!showPopUp)}><IoIosAdd /> </button>
+            {showPopUp ?
+                <div className="flex center popup-register">
+                    <div className="flex flex-column popup-container ">
+                        <div className="flex flex center title">Add Income or expense</div>
+                        <div className="flex-column center inputs-container">
+                            <label>Category:</label>
+                            <input type="text" className="input" placeholder="Category" />
+                            <label>Date:</label>
+                            <input type="date" className="input" placeholder="Date"/>
+                            <label>Sum:</label>
+                            <input type="number" className="input" placeholder="Sum"/>
+                            <label>Details:</label>
+                            <textarea type="text" rows="8"  className="textarea" placeholder="Details"/>
+                        </div>
+                        <div className="flex center buttons-container">
+                            <button className="button" onClick={() => setShowPopUp(false)} >Ok</button>
+                            <button className="button" onClick={() => setShowPopUp(false)} >Cancel</button>
+                        </div>
+                    </div>
+                </div> : ''}
         </div>
     </>);
 }

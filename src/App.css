@@ -156,3 +156,33 @@
   align-items: center;
   padding: 0;
 }
+.popup-register{
+  position: fixed;
+  left: 0;
+  top:0; 
+  min-width: 100wv;
+  min-height: 100vh;
+  background: rgba(136, 136, 136, 0.521);
+
+}
+.popup-container{
+  margin: 6vw;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    height: 70vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.popup-container .input,.popup-container .textarea{
+  width: 80vw;
+  text-align: center;
+  border-radius: 10px;
+  margin: 2px;
+  font-size: 1rem;
+  border: 1px solid blue;
+  background: rgba(217, 217, 217, 0.6);;
+}
+
+.inputs-container{
+  padding: 2vw;
+}

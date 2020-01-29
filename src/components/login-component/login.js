@@ -1,12 +1,14 @@
 
 import React from 'react';
 import { Link, useHistory } from "react-router-dom";
+import authService from '../../services/auth.service';
 
 
 function Login() {
+  console.log(authService)
   const history = useHistory();
   const clickLogin = () => {
-    history.push('/Home');
+    authService.signUp().then(s => { history.push('/Home'); }).catch(e => { });
   }
   return (
     <div className="flex center container-login" >
